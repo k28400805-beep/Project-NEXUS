@@ -1,4 +1,4 @@
-# 🌐 Project Nexus
+# 🌐 KUT GAMES
 
 > **Tek bir web sitesinde kocaman bir dijital evren.**
 
@@ -12,7 +12,7 @@ Amaç sadece bir web sitesi yapmak değil; **kullanıcının içinde vakit geçi
 
 ### 🕹️ Oyun Merkezi
 
-Project Nexus'un merkezinde çok sayıda oynanabilir mini oyun bulunur.
+Kut Games in merkezinde çok sayıda oynanabilir mini oyun bulunur.
 
 Planlanan oyun kategorileri:
 
@@ -133,7 +133,7 @@ Kendi takımını oluştur ve yönet.
 
 ## 🌐 Sanal İnternet
 
-Project Nexus içerisinde küçük bir internet dünyası bulunur.
+Kut Games içerisinde küçük bir internet dünyası bulunur.
 
 Planlanan sistemler:
 

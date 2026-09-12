@@ -5,117 +5,792 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Project Nexus</title>
-
-    <meta name="description"
-          content="Project Nexus — oyunlar, şehirler, krallıklar, uzay, dedektiflik ve daha fazlasının bulunduğu interaktif dijital evren.">
+    <title>KUT Games</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         APP
-    ========================== -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
 
-    <div id="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
 
-        <!-- =========================
-             BACKGROUND
-        ========================== -->
+        <div class="brand">
+            <div class="brand-icon">K</div>
 
-        <div class="background">
-            <div class="bg-orb orb-1"></div>
-            <div class="bg-orb orb-2"></div>
-            <div class="bg-grid"></div>
+            <div>
+                <h1>KUT</h1>
+                <span>GAMES</span>
+            </div>
         </div>
 
+        <div class="profile-mini">
+            <div class="avatar">K</div>
 
-        <!-- =========================
-             SIDEBAR
-        ========================== -->
+            <div>
+                <strong>Kürşat</strong>
+                <small id="sidebarLevel">Seviye 1</small>
+            </div>
 
-        <aside class="sidebar">
+            <div class="online"></div>
+        </div>
 
-            <div class="brand">
+        <nav>
 
-                <div class="brand-logo">
-                    N
-                </div>
+            <button class="nav-item active" data-page="home">
+                <span>⌂</span>
+                Ana Sayfa
+            </button>
 
-                <div class="brand-text">
-                    <strong>NEXUS</strong>
-                    <span>Digital Universe</span>
+            <button class="nav-item" data-page="games">
+                <span>🎮</span>
+                Oyun Merkezi
+                <b>32</b>
+            </button>
+
+            <button class="nav-item" data-page="city">
+                <span>🏙️</span>
+                Şehrim
+            </button>
+
+            <button class="nav-item" data-page="kingdom">
+                <span>👑</span>
+                Kuzeyyaka
+            </button>
+
+            <button class="nav-item" data-page="space">
+                <span>🚀</span>
+                Uzay
+            </button>
+
+            <button class="nav-item" data-page="detective">
+                <span>🕵️</span>
+                Dedektif
+            </button>
+
+            <button class="nav-item" data-page="garage">
+                <span>🚗</span>
+                Garaj
+            </button>
+
+            <button class="nav-item" data-page="football">
+                <span>⚽</span>
+                Futbol
+            </button>
+
+            <button class="nav-item" data-page="internet">
+                <span>🌐</span>
+                Sanal İnternet
+            </button>
+
+            <button class="nav-item" data-page="terminal">
+                <span>⌘</span>
+                Terminal
+            </button>
+
+            <button class="nav-item" data-page="achievements">
+                <span>🏆</span>
+                Başarımlar
+            </button>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <button class="nav-item" id="settingsBtn">
+                <span>⚙️</span>
+                Ayarlar
+            </button>
+
+            <button class="nav-item" id="helpBtn">
+                <span>❔</span>
+                Yardım
+            </button>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <button class="mobile-menu" id="mobileMenu">☰</button>
+
+            <div class="search-box">
+                <span>⌕</span>
+                <input
+                    id="globalSearch"
+                    type="text"
+                    placeholder="KUT Games'te ara..."
+                >
+                <kbd>Ctrl K</kbd>
+            </div>
+
+            <div class="top-actions">
+
+                <button id="notificationBtn" class="icon-btn">
+                    🔔
+                    <i></i>
+                </button>
+
+                <button id="themeBtn" class="icon-btn">
+                    ☾
+                </button>
+
+                <div class="top-profile">
+                    <div class="avatar small">K</div>
+
+                    <div>
+                        <strong>Kürşat</strong>
+                        <small id="topLevel">Seviye 1</small>
+                    </div>
                 </div>
 
             </div>
 
+        </header>
 
-            <div class="sidebar-profile">
 
-                <div class="avatar">
-                    K
+        <!-- PAGE CONTENT -->
+        <div class="page-content">
+
+            <!-- HOME -->
+            <section id="homePage" class="page active">
+
+                <div class="hero">
+
+                    <div class="hero-content">
+
+                        <div class="eyebrow">
+                            <span></span>
+                            KUT DIGITAL UNIVERSE
+                        </div>
+
+                        <h2>
+                            Dijital dünyana
+                            <strong>hoş geldin.</strong>
+                        </h2>
+
+                        <p>
+                            Oyun oyna, XP kazan, seviyeni yükselt,
+                            kendi dünyanı oluştur ve KUT Games'in
+                            farklı evrenlerini keşfet.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <button class="primary-btn" data-page-jump="games">
+                                🎮 Oyunlara Git
+                            </button>
+
+                            <button class="secondary-btn" data-page-jump="kingdom">
+                                👑 Kuzeyyaka'yı Keşfet
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="hero-visual">
+
+                        <div class="planet">
+                            <div class="planet-core">K</div>
+                        </div>
+
+                        <div class="orbit orbit-a"></div>
+                        <div class="orbit orbit-b"></div>
+                        <div class="orbit orbit-c"></div>
+
+                        <div class="floating-card card-a">
+                            🎮
+                            <strong>32 Oyun</strong>
+                        </div>
+
+                        <div class="floating-card card-b">
+                            ⭐
+                            <strong>XP Sistemi</strong>
+                        </div>
+
+                        <div class="floating-card card-c">
+                            🌌
+                            <strong>5 Evren</strong>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="profile-info">
-                    <strong>Kürşat</strong>
-                    <span>Seviye <b id="sidebarLevel">1</b></span>
+
+                <!-- STATS -->
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <div class="stat-icon">🎮</div>
+
+                        <div>
+                            <small>Oynanan Oyun</small>
+                            <strong id="gamesPlayed">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">⚡</div>
+
+                        <div>
+                            <small>Toplam XP</small>
+                            <strong id="totalXP">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">🏆</div>
+
+                        <div>
+                            <small>Başarımlar</small>
+                            <strong id="achievements">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">🔥</div>
+
+                        <div>
+                            <small>Günlük Seri</small>
+                            <strong id="dailyStreak">1 gün</strong>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="online-dot"></div>
 
+                <!-- LOWER GRID -->
+                <div class="dashboard-grid">
+
+                    <!-- PROFILE -->
+                    <div class="panel profile-panel">
+
+                        <div class="panel-header">
+                            <div>
+                                <small>PROFİL</small>
+                                <h3>Kürşat</h3>
+                            </div>
+
+                            <span id="levelBadge" class="level-badge">
+                                LVL 1
+                            </span>
+                        </div>
+
+                        <div class="xp-info">
+                            <span>Seviye ilerlemesi</span>
+                            <strong id="xpText">0 / 100 XP</strong>
+                        </div>
+
+                        <div class="xp-bar">
+                            <div id="xpFill"></div>
+                        </div>
+
+                        <div class="profile-mini-stats">
+                            <div>
+                                <strong id="wins">0</strong>
+                                <small>Kazanılan</small>
+                            </div>
+
+                            <div>
+                                <strong id="profileGames">0</strong>
+                                <small>Oyun</small>
+                            </div>
+
+                            <div>
+                                <strong id="profileAchievements">0</strong>
+                                <small>Başarım</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- DAILY QUEST -->
+                    <div class="panel quest-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <small>GÜNLÜK GÖREV</small>
+                                <h3>Oyun Avcısı</h3>
+                            </div>
+
+                            <span class="quest-reward">
+                                +50 XP
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Bugün 3 farklı oyun oyna.
+                        </p>
+
+                        <div class="quest-progress">
+                            <div>
+                                <span id="questText">0 / 3</span>
+                                <strong id="questPercent">0%</strong>
+                            </div>
+
+                            <div class="xp-bar">
+                                <div id="questFill"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POPULAR GAMES -->
+                <div class="section-title">
+                    <div>
+                        <small>ŞİMDİ OYNA</small>
+                        <h3>Popüler Oyunlar</h3>
+                    </div>
+
+                    <button data-page-jump="games">
+                        Tüm oyunlar →
+                    </button>
+                </div>
+
+                <div class="game-preview-grid">
+
+                    <button class="game-card" data-game="Refleks Arenası">
+                        <div class="game-icon reflex">⚡</div>
+                        <div>
+                            <strong>Refleks Arenası</strong>
+                            <small>Ne kadar hızlısın?</small>
+                        </div>
+                        <span>▶</span>
+                    </button>
+
+                    <button class="game-card" data-game="Asteroid Rush">
+                        <div class="game-icon space">☄️</div>
+                        <div>
+                            <strong>Asteroid Rush</strong>
+                            <small>Asteroitlerden kaç!</small>
+                        </div>
+                        <span>▶</span>
+                    </button>
+
+                    <button class="game-card" data-game="Memory Grid">
+                        <div class="game-icon memory">🧠</div>
+                        <div>
+                            <strong>Memory Grid</strong>
+                            <small>Hafızanı test et.</small>
+                        </div>
+                        <span>▶</span>
+                    </button>
+
+                    <button class="game-card" data-game="KUT Racer">
+                        <div class="game-icon racer">🏎️</div>
+                        <div>
+                            <strong>KUT Racer</strong>
+                            <small>Yarış başlıyor!</small>
+                        </div>
+                        <span>▶</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- GAMES -->
+            <section id="gamesPage" class="page">
+
+                <div class="page-heading">
+                    <div>
+                        <small>KUT GAMES</small>
+                        <h2>Oyun Merkezi</h2>
+                        <p>Gerçekten oynayabileceğin mini oyunlar.</p>
+                    </div>
+                </div>
+
+                <div class="games-grid">
+
+                    <button class="big-game" data-game="Refleks Arenası">
+                        <span>⚡</span>
+                        <strong>Refleks Arenası</strong>
+                        <small>Yeşil olduğunda tıkla!</small>
+                    </button>
+
+                    <button class="big-game" data-game="Hedef Vurma">
+                        <span>🎯</span>
+                        <strong>Hedef Vurma</strong>
+                        <small>Hedefi mümkün olduğunca hızlı yakala.</small>
+                    </button>
+
+                    <button class="big-game" data-game="Memory Grid">
+                        <span>🧠</span>
+                        <strong>Memory Grid</strong>
+                        <small>Karelerin yerini hatırla.</small>
+                    </button>
+
+                    <button class="big-game" data-game="Sayı Tahmini">
+                        <span>🔢</span>
+                        <strong>Sayı Tahmini</strong>
+                        <small>Gizli sayıyı bul.</small>
+                    </button>
+
+                    <button class="big-game" data-game="Snake KUT">
+                        <span>🐍</span>
+                        <strong>Snake KUT</strong>
+                        <small>Klasik yılan oyunu.</small>
+                    </button>
+
+                    <button class="big-game" data-game="KUT Racer">
+                        <span>🏎️</span>
+                        <strong>KUT Racer</strong>
+                        <small>Engellerden kaç ve ilerle.</small>
+                    </button>
+
+                    <button class="big-game" data-game="Asteroid Rush">
+                        <span>☄️</span>
+                        <strong>Asteroid Rush</strong>
+                        <small>Uzayda hayatta kal.</small>
+                    </button>
+
+                    <button class="big-game" data-game="Penaltı">
+                        <span>⚽</span>
+                        <strong>Penaltı</strong>
+                        <small>Topu köşeye gönder.</small>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- CITY -->
+            <section id="cityPage" class="page">
+                <div class="page-heading">
+                    <small>WORLD</small>
+                    <h2>🏙️ Şehrim</h2>
+                    <p>Kendi şehrini kur, geliştir ve büyüt.</p>
+                </div>
+
+                <div class="world-panel city-world">
+                    <div class="world-icon">🏙️</div>
+                    <h3>KUT City</h3>
+                    <p>Nüfus: 120</p>
+
+                    <div class="city-stats">
+                        <span>💰 5.000 KUT</span>
+                        <span>🏠 12 Bina</span>
+                        <span>⚡ 72 Enerji</span>
+                    </div>
+
+                    <button class="primary-btn" id="buildCityBtn">
+                        🏗️ Bina İnşa Et
+                    </button>
+                </div>
+            </section>
+
+
+            <!-- KINGDOM -->
+            <section id="kingdomPage" class="page">
+                <div class="page-heading">
+                    <small>KUT KINGDOM</small>
+                    <h2>👑 Kuzeyyaka Krallığı</h2>
+                    <p>Krallığını yönet.</p>
+                </div>
+
+                <div class="kingdom-panel">
+                    <div class="castle">🏰</div>
+
+                    <h3>Kuzeyyaka Krallığı</h3>
+
+                    <div class="kingdom-stats">
+                        <div>
+                            <strong>1</strong>
+                            <small>Seviye</small>
+                        </div>
+
+                        <div>
+                            <strong>250</strong>
+                            <small>Altın</small>
+                        </div>
+
+                        <div>
+                            <strong>35</strong>
+                            <small>Asker</small>
+                        </div>
+                    </div>
+
+                    <button class="primary-btn" id="kingdomAction">
+                        ⚔️ Krallığı Güçlendir
+                    </button>
+                </div>
+            </section>
+
+
+            <!-- SPACE -->
+            <section id="spacePage" class="page">
+                <div class="page-heading">
+                    <small>SPACE</small>
+                    <h2>🚀 Uzay</h2>
+                    <p>Galaksiyi keşfet.</p>
+                </div>
+
+                <div class="space-panel">
+                    <div class="space-planet">🪐</div>
+
+                    <h3>KUT-01</h3>
+                    <p>Keşfedilecek 12 gezegen var.</p>
+
+                    <button class="primary-btn" id="spaceExplore">
+                        🚀 Keşfe Çık
+                    </button>
+                </div>
+            </section>
+
+
+            <!-- DETECTIVE -->
+            <section id="detectivePage" class="page">
+                <div class="page-heading">
+                    <small>INVESTIGATION</small>
+                    <h2>🕵️ Dedektif Bürosu</h2>
+                    <p>İpuçlarını bul ve olayları çöz.</p>
+                </div>
+
+                <div class="detective-panel">
+                    <div class="detective-icon">🔎</div>
+                    <h3>Dosya #001</h3>
+                    <p>
+                        Şehirde kaybolan gizemli kutunun izini sür.
+                    </p>
+
+                    <button class="primary-btn" id="detectiveStart">
+                        🔍 Dosyayı Aç
+                    </button>
+                </div>
+            </section>
+
+
+            <!-- GARAGE -->
+            <section id="garagePage" class="page">
+                <div class="page-heading">
+                    <small>GARAGE</small>
+                    <h2>🚗 Garaj</h2>
+                    <p>Araçlarını yönet ve geliştir.</p>
+                </div>
+
+                <div class="garage-car">
+                    <div class="car-art">🚗</div>
+
+                    <h3>KUT GT</h3>
+                    <p>Motor: 120 HP</p>
+
+                    <div class="car-stats">
+                        <span>⚡ Hız 72</span>
+                        <span>🛞 Yol Tutuş 64</span>
+                        <span>🔧 Dayanıklılık 80</span>
+                    </div>
+
+                    <button class="primary-btn" id="upgradeCar">
+                        🔧 Motoru Geliştir
+                    </button>
+                </div>
+            </section>
+
+
+            <!-- FOOTBALL -->
+            <section id="footballPage" class="page">
+                <div class="page-heading">
+                    <small>FOOTBALL</small>
+                    <h2>⚽ Futbol</h2>
+                    <p>Takımını kur ve maçlara çık.</p>
+                </div>
+
+                <div class="football-panel">
+                    <div class="team-logo">K</div>
+
+                    <h3>KUT Spor</h3>
+
+                    <div class="football-stats">
+                        <span>🏆 0 Kupa</span>
+                        <span>⚽ 0 Gol</span>
+                        <span>🔥 Form %50</span>
+                    </div>
+
+                    <button class="primary-btn" id="footballMatch">
+                        ⚽ Maç Yap
+                    </button>
+                </div>
+            </section>
+
+
+            <!-- INTERNET -->
+            <section id="internetPage" class="page">
+                <div class="page-heading">
+                    <small>VIRTUAL WEB</small>
+                    <h2>🌐 Sanal İnternet</h2>
+                    <p>KUT evrenindeki interneti keşfet.</p>
+                </div>
+
+                <div class="internet-grid">
+
+                    <button class="internet-card" id="newsBtn">
+                        📰
+                        <strong>KUT Haber</strong>
+                        <small>Son gelişmeler</small>
+                    </button>
+
+                    <button class="internet-card" id="forumBtn">
+                        💬
+                        <strong>KUT Forum</strong>
+                        <small>Topluluğa katıl</small>
+                    </button>
+
+                    <button class="internet-card" id="shopBtn">
+                        🛒
+                        <strong>KUT Shop</strong>
+                        <small>Mağazayı aç</small>
+                    </button>
+
+                    <button class="internet-card" id="bankBtn">
+                        🏦
+                        <strong>KUT Bank</strong>
+                        <small>Hesabını görüntüle</small>
+                    </button>
+
+                </div>
+            </section>
+
+
+            <!-- TERMINAL -->
+            <section id="terminalPage" class="page">
+
+                <div class="page-heading">
+                    <small>SYSTEM</small>
+                    <h2>⌘ KUT Terminal</h2>
+                </div>
+
+                <div class="terminal">
+
+                    <div class="terminal-head">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        KUT Terminal
+                    </div>
+
+                    <div id="terminalOutput">
+                        <div>KUT Games Terminal v1.0</div>
+                        <div>Yardım için <b>help</b> yaz.</div>
+                    </div>
+
+                    <div class="terminal-input">
+                        <span>kut@system:~$</span>
+                        <input id="terminalInput" autocomplete="off">
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACHIEVEMENTS -->
+            <section id="achievementsPage" class="page">
+
+                <div class="page-heading">
+                    <small>PROFILE</small>
+                    <h2>🏆 Başarımlar</h2>
+                    <p>Kazandığın başarımları gör.</p>
+                </div>
+
+                <div class="achievement-grid">
+
+                    <div class="achievement">
+                        <span>🎮</span>
+                        <div>
+                            <strong>İlk Oyun</strong>
+                            <small>İlk oyununu oyna.</small>
+                        </div>
+                    </div>
+
+                    <div class="achievement">
+                        <span>⚡</span>
+                        <div>
+                            <strong>XP Avcısı</strong>
+                            <small>100 XP kazan.</small>
+                        </div>
+                    </div>
+
+                    <div class="achievement">
+                        <span>🔥</span>
+                        <div>
+                            <strong>Seri Başlangıç</strong>
+                            <small>Günlük görevini tamamla.</small>
+                        </div>
+                    </div>
+
+                    <div class="achievement">
+                        <span>👑</span>
+                        <div>
+                            <strong>Kuzeyyaka</strong>
+                            <small>Krallığı ziyaret et.</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- NOTIFICATIONS -->
+    <div class="notification-panel" id="notificationPanel">
+
+        <div class="notification-head">
+            <strong>Bildirimler</strong>
+            <button id="closeNotifications">×</button>
+        </div>
+
+        <div id="notifications">
+            <div class="notification">
+                <span>👋</span>
+                <div>
+                    <strong>KUT Games'e hoş geldin!</strong>
+                    <small>Sistemin hazır.</small>
+                </div>
             </div>
+        </div>
+
+    </div>
 
 
-            <nav class="navigation">
-
-                <div class="nav-title">
-                    ANA MENÜ
-                </div>
-
-                <button class="nav-item active" data-page="home">
-                    <span class="nav-icon">⌂</span>
-                    <span>Ana Sayfa</span>
-                </button>
-
-                <button class="nav-item" data-page="games">
-                    <span class="nav-icon">🎮</span>
-                    <span>Oyun Merkezi</span>
-                    <span class="nav-badge">30+</span>
-                </button>
-
-                <button class="nav-item" data-page="city">
-                    <span class="nav-icon">🏙️</span>
-                    <span>Şehrim</span>
-                </button>
-
-                <button class="nav-item" data-page="kingdom">
-                    <span class="nav-icon">👑</span>
-                    <span>Krallık</span>
-                </button>
-
-                <button class="nav-item" data-page="space">
-                    <span class="nav-icon">🚀</span>
-                    <span>Uzay</span>
-                </button>
-
-                <button class="nav-item" data-page="detective">
-                    <span class="nav-icon">🕵️</span>
-                    <span>Dedektif</span>
-                </button>
-
-                <button class="nav-item" data-page="garage">
-                    <span class="nav-icon">🚗</span>
-                    <span>Garaj</span>
-                </button>
-
-                <button class="nav-item" data-page="football">
-                    <span class="nav-icon">⚽</span>
-                    <span>Futbol</span>
-                </button>
+    <!-- TOAST -->
+    <div id="toastContainer"></div>
 
 
-                <div class="nav-title second-title">
-                    KEŞFET
+    <!-- GAME MODAL -->
+    <div class="modal hidden" id="gameModal">
+
+        <div class="game-window">
+
+            <button class="modal-close" id="closeGame">×</button>
+
+            <div id="gameContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
 ```
